@@ -100,7 +100,7 @@
          product.price = price;
          product.quantity = quantity;
          cart.buyProducts(product);
-         console.log(cart.products);
+         //console.log(cart.products);
          renderCartStatus(cart);
     }
 
@@ -154,7 +154,7 @@
         let isValid = true,
             login = document.getElementsByName("userName")[0],
             email = document.getElementsByName("userEmail")[0];
-        console.log(login.value.trim());
+        //console.log(login.value.trim());
         if (login.value.trim().length === 0) {
             isValid = false;
         }
@@ -219,7 +219,7 @@
             cart.cleanCart();
             renderCartStatus(cart);
             modalWindow.classList.add("hidden");
-            console.log(cart.products);
+            //console.log(cart.products);
         }
     });
 
